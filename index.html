@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Portafolio AR basado en marcadores</title>
+
+  <!-- Importar A-Frame y después AR.js -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <a-scene>
+    <!-- Escena A-frame -->
+    <a-assets>
+      <img id="marcador1" src="assets/icon-01.png">
+      <img id="marcador2" src="assets/icon-02.png">
+      <img id="marcador3" src="assets/icon-03.png">
+      <img id="marcador4" src="assets/icon-04.png">
+      <img id="marcador5" src="assets/icon-05.png">
+      <img id="marcador6" src="assets/icon-06.png">
+
+    </a-assets>
+
+  <!--marcador de vuelo-->
+    <a-maker type="pattern" url="pattern-maker/virtual-flight/pattern-icon-01.patt">
+      <a-plane src="#marcador2" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-maker>
+
+  <!--marcador de recorrido virtual-->
+    <a-maker type="pattern" url="pattern-maker/virtual-tour/pattern-icon-04.patt">
+      <a-plane src="#marcador3" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-maker>
+
+    <!--marcador de juego de disparos-->
+    <a-maker type="pattern" url="pattern-maker/ar-shooting-game/pattern-icon-06.patt">
+      <a-plane src="#marcador4" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-maker>
+  
+    <!--marcador de navegacion-->
+    <a-maker type="pattern" url="pattern-maker/ar-navigation/pattern-icon-03.patt">
+      <a-plane src="#marcador5" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-maker>
+
+    <!--marcador de menu-->
+    <a-maker type="pattern" url="pattern-maker/ar-menu-card/pattern-icon-02.patt">
+      <a-plane src="#marcador6" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+    </a-maker>
+  </a-scene>
+</body>
+
+</html>
